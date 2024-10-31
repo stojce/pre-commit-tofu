@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 source "$(dirname "$0")/global.sh"
+
 tofu_path=$(global::get_tofu_path)
 
 if [ -z "$tofu_path" ]; then
@@ -14,4 +15,4 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-$tofu_path fmt -recursive -list=false
+$tofu_path validate

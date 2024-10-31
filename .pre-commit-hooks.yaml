@@ -3,3 +3,9 @@
   description: Rewrites all Terraform configuration files to a canonical format.
   entry: hooks/tofu_fmt.sh
   language: script
+
+- id: tofu_validate
+  name: OpenTofu Validate
+  description: Validates terraform configuration files.
+  entry: hooks/tofu_validate.sh
+  language: script
